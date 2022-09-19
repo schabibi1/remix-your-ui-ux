@@ -1,5 +1,3 @@
-import React from "react";
-
 const Footer = () => {
   return (
     <footer className="text-center flex flex-col items-center py-20 container mx-auto">

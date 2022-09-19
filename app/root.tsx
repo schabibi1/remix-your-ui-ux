@@ -7,7 +7,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
-import { storyblokInit, apiPlugin } from "@storyblok/js";
+import { storyblokInit, apiPlugin } from "@storyblok/react";
 import Feature from "./components/Feature";
 import Grid from "./components/Grid";
 import Teaser from "./components/Teaser";
@@ -16,11 +16,7 @@ import BlogPost from "./components/BlogPost";
 import FeaturedPosts from "./components/FeaturedPosts";
 import PostsList from "./components/PostsList";
 
-interface Components {
-  [key: string]: React.ElementType;
-}
-
-const components: Components = {
+const components = {
   feature: Feature,
   grid: Grid,
   teaser: Teaser,
@@ -31,14 +27,14 @@ const components: Components = {
 };
 
 storyblokInit({
-  accessToken: "your_token",
+  accessToken: "IpSV7QBufqcmYTxZ2sAKUgtt",
   use: [apiPlugin],
   components,
 });
 
 export const meta: MetaFunction = () => ({
   charset: "utf-8",
-  title: "New Remix App",
+  title: "Storyblok Remix blog website",
   viewport: "width=device-width,initial-scale=1",
 });
 

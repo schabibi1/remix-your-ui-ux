@@ -17,7 +17,7 @@ interface Blok {
   }
 }
 
-const PostLists = ({ blok }: Blok) => {
+const PostsList = ({ blok }: Blok) => {
   return (
     <ul
       className="mx-auto w-full flex flex-col items-center"
@@ -58,4 +58,4 @@ const PostLists = ({ blok }: Blok) => {
   );
 };
 
-export default PostLists;
+export default PostsList;

@@ -1,4 +1,3 @@
-import React from "react";
 import { storyblokEditable, renderRichText } from "@storyblok/react";
 
 interface Blok {
