@@ -9,7 +9,9 @@ import {
 } from "@storyblok/react";
 
 interface Params {
-  params: string[];
+  params: {
+    [key: string]: string
+  }
 }
 
 export default function Page() {
