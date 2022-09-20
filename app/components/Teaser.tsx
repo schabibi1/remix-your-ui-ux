@@ -14,7 +14,7 @@ interface Blok {
 
 const Teaser = ({ blok }: Blok) => {
   return (
-    <div className="bg-white-half" {...storyblokEditable(blok)} key={blok._uid}>
+    <div className="bg-white-half" {...storyblokEditable(blok)}>
       <div className="pb-6 pt-16 container mx-auto">
         <h2 className="text-6xl font-bold font-serif text-primary mb-4">
           {blok.headline}
@@ -22,7 +22,7 @@ const Teaser = ({ blok }: Blok) => {
         <img
           src={blok.image.filename}
           alt={blok.image.alt}
-          className="w-full"
+          className="w-full rounded-lg"
         />
       </div>
     </div>

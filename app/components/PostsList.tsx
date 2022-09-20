@@ -22,7 +22,6 @@ const PostsList = ({ blok }: Blok) => {
     <ul
       className="mx-auto w-full flex flex-col items-center"
       {...storyblokEditable(blok)}
-      key={blok._uid}
     >
       {blok.posts.map((post) => {
         return (

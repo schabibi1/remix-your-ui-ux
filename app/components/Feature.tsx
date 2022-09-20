@@ -16,7 +16,6 @@ const Feature = ({ blok }: Blok) => {
     <div
       className="py-16 max-w-sm p-2 sm:p-10 text-center flex flex-col items-center"
       {...storyblokEditable(blok)}
-      key={blok._uid}
     >
       {/* <DynamicIcon type={blok.icon} /> */}
       <div className="px-6 py-4">

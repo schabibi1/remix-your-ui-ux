@@ -16,6 +16,8 @@ import BlogPost from "./components/BlogPost";
 import FeaturedPosts from "./components/FeaturedPosts";
 import PostsList from "./components/PostsList";
 
+import styles from "./styles/app.css"
+
 const components = {
   feature: Feature,
   grid: Grid,
@@ -53,4 +55,8 @@ export default function App() {
       </body>
     </html>
   );
+}
+
+export function links() {
+  return [{ rel: "stylesheet", href: styles }]
 }
