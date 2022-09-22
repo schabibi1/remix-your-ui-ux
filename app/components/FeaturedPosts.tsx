@@ -39,7 +39,7 @@ const FeaturedPosts = ({ blok }: Blok) => {
             <li key={post.slug} className="pr-8 w-1/3">
               <a href={`/blog/${post.slug}`}>
                 <a className="py-16 block transition hover:opacity-50">
-                  <img src={post.content.image.filename} className="pb-10 w-full" />
+                  <img src={post.content.image.filename} className="pb-10 w-full rounded-lg" />
                   <h2 className="pb-6 text-lg font-bold">
                     {post.content.title}
                   </h2>

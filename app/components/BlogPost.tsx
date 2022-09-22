@@ -1,4 +1,5 @@
-import { storyblokEditable, renderRichText } from "@storyblok/react";
+import { storyblokEditable } from "@storyblok/react";
+import { render } from "storyblok-rich-text-react-renderer";
 
 interface Blok {
   blok: {
@@ -38,7 +39,7 @@ const BlogPost = ({ blok }: Blok) => {
       </div>
       <div className="max-w-3xl mx-auto text-center pt-20 flex flex-col items-center">
         <div className="leading-relaxed text-xl text-left text-gray-800 drop-cap">
-          {renderRichText(blok.long_text)}
+          {render(blok.long_text)}
         </div>
 
         <div className="py-16 max-w-sm p-2 sm:p-10 text-center flex flex-col">
