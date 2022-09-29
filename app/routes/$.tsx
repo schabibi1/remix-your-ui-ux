@@ -29,13 +29,13 @@ export default function Page() {
 
 export const loader = async ({ params }: Params) => {
   let slug = params["*"] ?? "home";
-  let blogSlug = params["*"] === "blog/" ? "blog/home" : null;
+  slug = slug.endsWith("/") ? slug.slice(0, -1) : slug;
 
   let sbParams = {
     version: "draft",
     resolve_relations: ["featured-posts.posts", "selected-posts.posts"],
   };
 
-  let { data } = await getStoryblokApi().get(`cdn/stories/${blogSlug ? blogSlug : slug}`, sbParams);
+  let { data } = await getStoryblokApi().get(`cdn/stories/${slug}`, sbParams);
   return json(data?.story);
 };

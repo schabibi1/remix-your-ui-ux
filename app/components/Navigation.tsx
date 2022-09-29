@@ -33,7 +33,7 @@ const Navigation = () => {
                 <a href="/" className="block px-4 py-1 md:p-2 lg:px-8">Home</a>
               </li>
               <li>
-                <a href="/blog/home" className="block px-4 py-1 md:p-2 lg:px-8">Blog</a>
+                <a href="/blog" className="block px-4 py-1 md:p-2 lg:px-8">Blog</a>
               </li>
               <li>
                 <a href="/about" className="block px-4 py-1 md:p-2 lg:px-8">About</a>
